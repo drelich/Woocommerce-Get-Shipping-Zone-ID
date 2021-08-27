@@ -8,7 +8,7 @@
     $ship_method['instance_id']; 					
   }
 
-  $zone_data = WC_Shipping_Zones::get_zone_by( 'instance_id', $ship_method['instance_id'][0] ); //get shipping zone data related to instance_id
+  $zone_data = WC_Shipping_Zones::get_zone_by( 'instance_id', $ship_method['instance_id'] ); //get shipping zone data related to instance_id
 
   $zone_id = $zone_data->get_id(); //and, finally, get the shipping zone ID for the order
 
