@@ -2,7 +2,7 @@
 
   $order = new \WC_Order( $order_id );
   
-  $ship_method =	$order->get_items( 'shipping' ); //get all shipping items for selected order
+  $ship_method = $order->get_items( 'shipping' ); //get all shipping items for selected order
 
   foreach($ship_methods as $ship_method) { //grab the shipping method instance_id		
     $ship_method['instance_id']; 					
