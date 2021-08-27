@@ -12,4 +12,10 @@
 
   $zone_id = $zone_data->get_id(); //and, finally, get the shipping zone ID for the order
 
+  if ($zone_id == 1) { // shipping in a zone with an ID = 1
+    echo "some content here";
+  } else { // shipping to everywhere else
+    echo "a different content here";
+  }
+
 ?>
